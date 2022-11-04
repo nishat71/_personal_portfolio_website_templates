@@ -1,0 +1,1767 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+@font-face {
+    font-family: 'Quilon';
+    src: url("../font/Quilon-Regular.woff");
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: 'Quilon';
+    src: url("../font/Quilon-Medium.woff");
+    font-weight: 500;
+}
+
+@font-face {
+    font-family: 'Quilon';
+    src: url("../font/Quilon-Semibold.woff");
+    font-weight: 600;
+}
+
+@font-face {
+    font-family: 'Quilon';
+    src: url("../font/Quilon-Bold.woff");
+    font-weight: 700;
+}
+
+html {
+    padding: 0px;
+    margin: 0 auto;
+    font-weight: 400;
+}
+
+body {
+    margin: 0px auto;
+    padding: 0px;
+}
+
+p {
+    margin: 0px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0px;
+}
+
+ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+button:focus,
+input:focus,
+select:focus,
+textarea:focus {
+    outline: none;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+
+button:focus-visible,
+input:focus-visible,
+select:focus-visible,
+textarea:focus-visible {
+    outline: none;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+
+.navbar-toggler:focus {
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+a,
+button {
+    -webkit-transition: .3s all ease;
+    -o-transition: .3s all ease;
+    transition: .3s all ease;
+}
+
+svg {
+    transition: .3s all ease;
+}
+
+figure {
+    margin: 0;
+}
+
+._toggler {
+    box-shadow: none !important;
+    border: none !important;
+}
+
+.dropdown-toggle::after {
+    display: none;
+}
+
+._toggler.collapsed ._personal_port_header_navbar_toggle_btn_icon {
+    background-image: url("../img/menu.png") !important;
+    transition: 0.1s all ease-in-out;
+    max-width: 18px;
+}
+
+._toggler ._personal_port_header_navbar_toggle_btn_icon {
+    background-image: url("../img/menu_close.png") !important;
+    transition: 0.1s all ease-in-out;
+    max-width: 18px;
+}
+
+/*----------------
+header-nav start 
+------------------*/
+._personal_port_header_wrapper {
+    background-color: var(--bg1);
+}
+
+._personal_port_header_nav_wrapper {
+    padding: 20px 0;
+}
+
+._personal_port_header_nav_wrapper_list {
+    gap: 45px;
+}
+
+._personal_port_header_nav_wrapper_item_link {
+    font-family: 'Be Vietnam Pro';
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.2;
+    color: var(--color3);
+    transition: .2s all ease;
+    position: relative;
+}
+
+._personal_port_header_nav_wrapper_item_link::before {
+    background-image: url('../img/nav_active.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    content: "";
+    width: 28px;
+    height: 8px;
+    bottom: -4px;
+    left: 20px;
+    color: var(--color3);
+    visibility: hidden;
+    transition: .2s all ease;
+}
+
+._personal_port_header_nav_wrapper_item_link:hover::before {
+    visibility: visible;
+}
+
+._personal_port_header_nav_link_active {
+    position: relative;
+    transition: .2s all ease;
+}
+
+._personal_port_header_nav_link_active::before {
+    background-image: url('../img/nav_active.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    content: "";
+    width: 28px;
+    height: 8px;
+    bottom: -4px;
+    left: 14px;
+    color: var(--color3);
+    visibility: visible;
+}
+
+/*-----------------------------------------
+_personal Portfolio Header herosection start
+-------------------------------------------*/
+._personal_port_hero_wrapper {
+    padding: 148px 0 48px;
+}
+
+._personal_port_hero_right_cont {
+    position: relative;
+}
+
+._personal_port_hero_right_cont_title {
+    position: relative;
+}
+
+._personal_port_hero_title {
+    font-family: 'Quilon';
+    font-weight: 600;
+    font-size: 70px;
+    line-height: 1.2;
+    color: var(--color3);
+    max-width: 100%;
+    margin-bottom: 20px;
+}
+
+._personal_port_hero_title::before {
+    background-image: url('../img/emoji.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    content: "";
+    width: 48px;
+    height: 48px;
+    bottom: 15px;
+    left: 347px;
+}
+
+._personal_port_hero_right_cont_para {
+    font-family: 'Be Vietnam Pro';
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 1.6;
+    color: var(--color3);
+    max-width: 77%;
+    margin-bottom: 70px;
+}
+
+._personal_port_hero_right_bg_img {
+    background-image: url('../img/hero_bg.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    max-width: 370px;
+    /* background-image: url('../img/hero_img_border.png');
+    background-color: var(--color6); */
+}
+
+._personal_port_hero_right_btn {
+    display: inline-block;
+    border-radius: 8px;
+    position: absolute;
+    content: "";
+    left: 320px;
+    bottom: 100px;
+}
+
+._personal_port_hero_right_btn_link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: .2s all ease-in-out;
+    width: 161px;
+    height: 58px;
+    background: var(--color3) !important;
+    border-radius: 8px;
+    font-family: 'Be Vietnam Pro';
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 1.2;
+    text-align: center;
+    color: var(--color1) !important;
+    position: relative;
+}
+
+._personal_port_hero_right_btn_link::before {
+    position: absolute;
+    content: "";
+    border: 2px solid var(--color3) !important;
+    border-radius: 8px;
+    width: calc(100% + 4px);
+    height: calc(100% + 4px);
+    top: 4px;
+    left: -6px;
+    /* bottom: -4px;
+    right: 4px; */
+    transition: .3s all ease;
+}
+
+._personal_port_hero_right_btn_link:hover::before {
+    left: 0;
+    bottom: 0;
+    right: 0;
+    top: 0;
+    width: calc(100% - 4px);
+    height: calc(100% - 4px);
+}
+
+._personal_port_hero_left_cont_area {
+    position: relative;
+    z-index: 2;
+}
+
+._personal_port_hero_left_cont_area::before {
+    background-image: url('../img/star.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 192px;
+    height: 192px;
+    position: absolute;
+    content: "";
+    top: 32%;
+    left: -85px;
+    z-index: -1;
+}
+
+._personal_port_hero_left_details {
+    margin: 48px 0 0;
+}
+
+._personal_port_hero_left_smtitle {
+    font-family: 'Be Vietnam Pro';
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.2;
+    color: var(--color3);
+    margin: 0 0 20px;
+}
+
+._personal_port_hero_left_title {
+    font-family: 'Quilon';
+    font-weight: 500;
+    font-size: 38px;
+    line-height: 1.2;
+    color: var(--color3);
+    margin: 0 0 20px;
+}
+
+._personal_port_hero_left_list {
+    display: flex;
+    align-items: center;
+    gap: 38px;
+}
+
+._personal_port_hero_left_list_item_link {
+    font-family: 'Be Vietnam Pro';
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.2;
+    color: var(--color3) !important;
+}
+
+._personal_port_scroll_bar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    margin-top: 70px;
+}
+
+._personal_port_scroll_title {
+    font-family: 'Be Vietnam Pro';
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.2;
+    color: var(--color3);
+}
+
+/*-------------------------------
+_personal Portfolio services start
+---------------------------------*/
+._personal_port_services_wrapper {
+    margin: 170px 0;
+}
+
+._personal_port_services_left_cont {
+    position: relative;
+}
+
+._personal_port_services_left_cont::before {
+    background-image: url('../img/Star\ 3.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 192px;
+    height: 192px;
+    position: absolute;
+    content: "";
+    bottom: -50px;
+    left: 31%;
+    z-index: -1;
+}
+
+._personal_port_services_left_cont::after {
+    background-image: url('../img/Star\ 2.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 192px;
+    height: 192px;
+    position: absolute;
+    content: "";
+    top: -51px;
+    right: -40px;
+    z-index: -1;
+}
+
+._personal_port_services_right_cont {
+    padding-left: 80px;
+}
+
+._personal_port_services_right_title {
+    font-family: 'Quilon';
+    font-weight: 600;
+    font-size: 42px;
+    line-height: 1.2;
+    color: var(--color3);
+    max-width: 80%;
+    margin: 0 0 70px;
+}
+
+._personal_port_services_right_list_item {
+    padding-bottom: 38px;
+    margin-bottom: 38px;
+    border-bottom: 2px solid #D7DFE1;
+    border-radius: 2px;
+}
+
+._list_item_color_light_green {
+    border-bottom: 2px solid #58F9BF;
+}
+
+._personal_port_services_list_title {
+    font-family: 'Quilon';
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 1.2;
+    color: var(--color3);
+    margin: 0 0 20px;
+    max-width: 100%;
+}
+
+._personal_port_services_list_title_span {
+    margin-right: 30px;
+}
+
+._personal_port_services_list_para {
+    font-family: 'Be Vietnam Pro';
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.6;
+    color: var(--color8);
+    max-width: 80%;
+}
+
+._list_title_color_grey {
+    color: var(--color8);
+}
+
+/*------------------------------
+_personal Portfolio process start
+--------------------------------*/
+
+._personal_port_process_wrapper {
+    margin: 0 0 170px;
+}
+
+._personal_port_process_top_cont {
+    margin: 0 0 70px;
+}
+
+._personal_port_process_top_title {
+    font-family: 'Quilon';
+    font-weight: 600;
+    font-size: 42px;
+    line-height: 1.2;
+    color: var(--color3);
+    max-width: 50%;
+    margin: 0 0 18px;
+}
+
+._personal_port_process_top_para {
+    font-family: 'Be Vietnam Pro';
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.6;
+    color: var(--color8);
+    max-width: 44%;
+}
+
+._personal_port_process_btm_group {
+    margin-bottom: 20px;
+    height: calc(100% - 20px);
+}
+
+._process_group_1 {
+    border-bottom: 2px solid var(--color6);
+}
+
+._process_group_2 {
+    border-bottom: 2px solid var(--bg1);
+}
+
+._process_group_3 {
+    border-bottom: 2px solid var(--color5);
+}
+
+._personal_port_process_btm_title {
+    font-family: 'Quilon';
+    font-weight: 500;
+    font-size: 22px;
+    line-height: 1.2;
+    color: var(--color3);
+    margin: 0 0 22px;
+}
+
+._personal_port_process_btm_title_span {
+    margin-right: 20px;
+}
+
+._personal_port_process_btm_para {
+    font-family: 'Be Vietnam Pro';
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.6;
+    color: var(--color8);
+    max-width: 89%;
+    padding: 0 0 42px;
+    border-radius: 2px;
+}
+
+/*------------------------------
+_personal Portfolio project start
+--------------------------------*/
+._personal_port_project_wrapper {
+    margin: 0 0 170px;
+}
+
+._personal_port_project_top_cont {
+    margin: 0 0 70px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+._personal_port_project_top_title {
+    font-family: 'Quilon';
+    font-weight: 600;
+    font-size: 42px;
+    line-height: 1.2;
+    text-align: center;
+    color: var(--color3);
+    margin: 0 0 18px;
+}
+
+._personal_port_project_top_para {
+    font-family: 'Be Vietnam Pro';
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.6;
+    text-align: center;
+    max-width: 41%;
+    color: var(--color8);
+
+}
+
+._personal_port_project_card {
+    padding: 48px;
+    margin: 0 0 30px;
+    border-radius: 12px;
+}
+
+._project_card_1 {
+    background-color: var(--color6);
+}
+
+._project_card_2 {
+    background-color: var(--bg1);
+}
+
+._project_card_3 {
+    background-color: var(--color7);
+}
+
+._project_card_4 {
+    background-color: var(--color5);
+}
+
+._personal_port_project_card_details {
+    margin: 20px 0 0;
+}
+
+._personal_port_project_card_smtitle {
+    font-family: 'Be Vietnam Pro';
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.2;
+    color: var(--color3);
+    margin: 0 0 20px;
+}
+
+._personal_port_project_card_title {
+    font-family: 'Quilon';
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 1.2;
+    color: var(--color3);
+    margin: 0 0 20px;
+}
+
+._personal_port_project_card_list {
+    display: flex;
+    align-items: center;
+    gap: 38px;
+}
+
+._personal_port_project_card_list_item_link {
+    font-family: 'Be Vietnam Pro';
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.2;
+    color: var(--color3) !important;
+}
+
+._personal_port_project_btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 20px 0 0;
+}
+
+._personal_port_project_btn_link {
+    width: 161px;
+    height: 58px;
+    background: var(--color3) !important;
+    border-radius: 8px;
+    font-family: 'Be Vietnam Pro';
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 1.2;
+    color: var(--color1) !important;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    /* box-shadow: -4px 4px 0 transparent;
+    border:2px solid #0f0101; */
+    transition: .3s all ease;
+}
+
+._personal_port_project_btn_link::before {
+    position: absolute;
+    content: "";
+    border: 2px solid var(--color3) !important;
+    border-radius: 8px;
+    width: calc(100% + 4px);
+    height: calc(100% + 4px);
+    top: 4px;
+    left: -6px;
+    transition: .3s all ease;
+    /* bottom: -4px;
+    right: 4px; */
+
+}
+
+._personal_port_project_btn_link:hover::before {
+    left: 0;
+    bottom: 0;
+    right: 0;
+    top: 0;
+    width: calc(100% - 4px);
+    height: calc(100% - 4px);
+}
+
+/*------------------------------
+_personal Portfolio about start
+--------------------------------*/
+._personal_port_about_wrapper {
+    margin: 0 0 170px;
+}
+
+._personal_port_about_left_bg_img {
+    background-image: url('../img/about_bg_img.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+._personal_port_about_title {
+    font-family: 'Quilon';
+    font-weight: 600;
+    font-size: 42px;
+    line-height: 1.2;
+    color: var(--color3);
+    max-width: 77%;
+    margin: 0 0 18px;
+}
+
+._personal_port_about_para1 {
+    font-family: 'Be Vietnam Pro';
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.6;
+    color: var(--color8);
+    max-width: 76%;
+    margin: 0 0 25px;
+}
+
+._personal_port_about_para2 {
+    font-family: 'Be Vietnam Pro';
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.6;
+    color: var(--color8);
+    max-width: 76%;
+}
+
+._personal_port_about_btm_cont {
+    margin: 38px 0 0;
+}
+
+._personal_port_about_btm_title {
+    font-family: 'Quilon';
+    font-weight: 500;
+    font-size: 22px;
+    line-height: 1.2;
+    color: var(--color2);
+    margin: 0 0 18px;
+}
+
+._personal_port_about_social_link_list {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+._personal_port_about_right_cont {
+    padding-left: 45px;
+}
+
+/*------------------------------------
+_personal Portfolio testimonial start
+-------------------------------------*/
+._personal_port_testimonial_wrapper {
+    margin: 0 0 170px;
+}
+
+._personal_port_testimonial_top_cont {
+    margin: 0 0 70px;
+}
+
+._personal_port_testimonial_top_title {
+    font-family: 'Quilon';
+    font-weight: 600;
+    font-size: 42px;
+    line-height: 1.2;
+    color: var(--color3);
+    max-width: 100%;
+    margin: 0 0 18px;
+}
+
+._personal_port_testimonial_top_para {
+    font-family: 'Be Vietnam Pro';
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.6;
+    color: var(--color8);
+    max-width: 40%;
+}
+
+._personal_port_testimonial_slider_wrap {
+    position: relative;
+}
+
+._personal_port_testimonial_cont {
+    padding: 38px 28px;
+    border: 1px solid var(--color3);
+    border-radius: 12px;
+}
+
+._testimonial_card_1 {
+    background: var(--color6);
+}
+
+._testimonial_card_2 {
+    background: var(--bg1);
+}
+
+._testimonial_card_3 {
+    background: var(--color5);
+}
+
+._personal_port_testimonial_title {
+    font-family: 'Be Vietnam Pro';
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 1.2;
+    color: var(--color3);
+    max-width: 100%;
+    margin: 0 0 38px;
+}
+
+._personal_port_testimonial_para {
+    font-family: 'Be Vietnam Pro';
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.6;
+    color: var(--color3);
+    max-width: 88%;
+    margin: 0 0 28px;
+}
+
+._personal_port_testimonial_user_title {
+    font-family: 'Be Vietnam Pro';
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 1.2;
+    color: var(--color3);
+    margin: 0 0 8px;
+}
+
+._personal_port_testimonial_user_ratings_list {
+    display: flex;
+    align-items: center;
+    gap: 7px;
+}
+
+._personal_port_testimonial_arrows {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    top: -110px;
+    right: 0;
+}
+
+._prev_btn {
+    width: 48px;
+    height: 48px;
+    border: 1px solid var(--color3);
+    background-color: var(--color3);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: .2s all ease;
+    margin-right: 20px;
+}
+
+._prev_btn:hover,
+._next_btn:hover {
+    border: 1px solid var(--color3);
+    background-color: var(--color1);
+}
+
+._prev_btn svg path {
+    stroke: var(--color1);
+    transition: .2s all ease;
+}
+
+._next_btn svg path {
+    transition: .2s all ease;
+}
+
+._prev_btn:hover svg path,
+._next_btn:hover svg path {
+    stroke: var(--color3);
+}
+
+._next_btn {
+    width: 48px;
+    height: 48px;
+    border: 1px solid var(--color3);
+    background-color: var(--color3);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: .2s all ease;
+}
+
+/*--------------------------
+personal Portfolio footer
+----------------------------*/
+._personal_port_footer_wrapper {
+    padding: 100px 0 0;
+    background-color: var(--color7);
+}
+
+._personal_port_footer_top_cont {
+    margin: 0 0 70px;
+}
+
+._personal_port_footer_top_title {
+    font-family: 'Quilon';
+    font-weight: 600;
+    font-size: 42px;
+    line-height: 1.2;
+    text-align: center;
+    color: var(--color3);
+    max-width: 52%;
+    margin: 0 auto 18px;
+}
+
+._personal_port_footer_top_para {
+    font-family: 'Be Vietnam Pro';
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.6;
+    text-align: center;
+    color: var(--color3);
+    max-width: 100%;
+    margin: 0 0 38px;
+}
+
+._personal_port_footer_btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+._personal_port_footer_btn_link {
+    width: 161px;
+    height: 58px;
+    background: var(--color3) !important;
+    border-radius: 8px;
+    font-family: 'Be Vietnam Pro';
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 1.2;
+    text-align: center;
+    color: #FFFFFF !important;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+._personal_port_footer_btn_link::before {
+    position: absolute;
+    content: "";
+    border: 2px solid var(--color3) !important;
+    border-radius: 8px;
+    width: calc(100% + 4px);
+    height: calc(100% + 4px);
+    top: 4px;
+    left: -6px;
+    /* bottom: -4px;
+    right: 4px; */
+    transition: .3s all ease;
+}
+
+._personal_port_footer_btn_link:hover::before {
+    left: 0;
+    bottom: 0;
+    right: 0;
+    top: 0;
+    width: calc(100% - 4px);
+    height: calc(100% - 4px);
+}
+
+._personal_port_footer_menu {
+    border-top: 1px solid var(--color3);
+    border-bottom: 1px solid var(--color3);
+    padding: 48px 0;
+}
+
+._personal_port_footer_menu_wrapper_list {
+    display: flex;
+    gap: 45px;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+._personal_port_footer_menu_wrapper_item_link {
+    font-family: 'Be Vietnam Pro';
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.2;
+    text-align: right;
+    color: var(--color3) !important;
+    transition: .2s all ease;
+}
+
+._personal_port_footer_menu_wrapper_item_link:hover {
+    color: var(--color5) !important;
+}
+
+._personal_port_footer_btm_cont {
+    padding: 28px 0;
+}
+
+._personal_port_footer_btm_para {
+    font-family: 'Be Vietnam Pro';
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.2;
+    text-align: center;
+    color: var(--color3);
+}
+
+@media(max-width:1399px) {
+    ._personal_port_hero_right_cont_para {
+        max-width: 85%;
+    }
+
+    ._personal_port_services_right_title {
+        max-width: 100%;
+    }
+
+    ._personal_port_services_list_para {
+        max-width: 89%;
+    }
+
+    ._personal_port_process_top_para {
+        max-width: 50%;
+    }
+
+    ._personal_port_process_btm_para {
+        font-size: 15px;
+        max-width: 100%;
+    }
+
+    ._personal_port_project_top_para {
+        max-width: 42%;
+    }
+
+    ._personal_port_about_title {
+        max-width: 100%;
+    }
+
+    ._personal_port_about_para1 {
+        max-width: 84%;
+    }
+
+    ._personal_port_about_para2 {
+        max-width: 95%;
+    }
+
+    ._personal_port_testimonial_top_para {
+        max-width: 47%;
+    }
+
+    ._personal_port_testimonial_title {
+        font-size: 17px;
+    }
+
+    ._personal_port_testimonial_para {
+        font-size: 15px;
+        max-width: 100%;
+    }
+}
+
+@media(max-width:1199px) {
+    ._personal_port_header_nav_wrapper_list {
+        gap: 20px;
+    }
+
+    ._personal_port_hero_wrapper {
+        padding: 80px 0 48px;
+    }
+
+    ._personal_port_hero_title {
+        font-size: 55px;
+    }
+
+    ._personal_port_hero_title::before {
+        bottom: 10px;
+        left: 275px;
+    }
+
+    ._personal_port_hero_right_cont_para {
+        max-width: 89%;
+        font-size: 17px;
+        margin-bottom: 38px;
+    }
+
+    ._personal_port_hero_right_btn {
+        left: 311px;
+        bottom: 100px;
+    }
+
+    ._personal_port_hero_left_title {
+        font-size: 30px;
+    }
+
+    ._personal_port_services_wrapper {
+        margin: 100px 0;
+    }
+
+    ._personal_port_services_right_title {
+        margin: 0 0 30px;
+        font-size: 35px;
+    }
+
+    ._personal_port_services_list_title {
+        font-size: 25px;
+    }
+
+    ._personal_port_services_list_para {
+        max-width: 100%;
+    }
+
+    ._personal_port_services_right_list_item {
+        padding-bottom: 20px;
+        margin-bottom: 20px;
+    }
+
+    ._personal_port_process_top_title {
+        max-width: 100%;
+    }
+
+    ._personal_port_process_top_para {
+        max-width: 100%;
+    }
+
+    ._personal_port_process_btm_para {
+        font-size: 12px;
+        padding: 0 0 24px;
+    }
+
+    ._personal_port_process_wrapper {
+        margin: 0 0 100px;
+    }
+
+    ._personal_port_project_card_title {
+        font-size: 25px;
+    }
+
+    ._personal_port_project_wrapper {
+        margin: 0 0 100px;
+    }
+
+    ._personal_port_about_title {
+        font-size: 35px;
+    }
+
+    ._personal_port_about_para1,
+    ._personal_port_about_para2 {
+        max-width: 100%;
+        font-size: 16px;
+    }
+
+    ._personal_port_about_wrapper {
+        margin: 0 0 100px;
+    }
+
+    ._personal_port_testimonial_top_cont {
+        margin: 0 0 50px;
+    }
+
+    ._personal_port_testimonial_title {
+        margin: 0 0 25px;
+    }
+
+    ._personal_port_testimonial_para {
+        font-size: 14px;
+        margin: 0 0 15px;
+    }
+
+    ._personal_port_testimonial_user_title {
+        font-size: 15px;
+    }
+
+    ._personal_port_testimonial_wrapper {
+        margin: 0 0 100px;
+    }
+
+    ._personal_port_footer_top_title {
+        max-width: 52%;
+    }
+
+    ._personal_port_footer_top_para {
+        font-size: 17px;
+        margin: 0 0 30px;
+    }
+
+    ._personal_port_footer_btn_link {
+        width: 150px;
+        height: 50px;
+    }
+
+    ._personal_port_footer_menu_wrapper_list {
+        gap: 30px;
+    }
+}
+
+@media(max-width:991px) {
+    ._personal_port_header_nav_left {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+    }
+
+    ._personal_port_header_nav_wrapper_list {
+        gap: 10px;
+        margin-top: 10px;
+    }
+
+    ._personal_port_header_nav_link_active::before {
+        left: 6px;
+    }
+
+    ._personal_port_header_nav_wrapper_item_link::before {
+        left: 11px;
+    }
+
+    ._personal_port_hero_wrapper {
+        padding: 50px 0 38px;
+    }
+
+    ._personal_port_hero_title {
+        font-size: 50px;
+    }
+
+    ._personal_port_hero_title::before {
+        bottom: 3px;
+        left: 653px;
+    }
+
+    ._personal_port_hero_right_btn {
+        left: 310px;
+        bottom: 106px;
+    }
+
+    ._personal_port_hero_left_cont_area::before {
+        left: -79px;
+    }
+
+    ._personal_port_hero_left_cont_area {
+        padding-top: 60px;
+    }
+
+    ._personal_port_services_right_cont {
+        padding: 80px 0 0;
+    }
+
+    ._personal_port_services_right_title {
+        font-size: 30px;
+    }
+
+    ._personal_port_process_top_title {
+        font-size: 32px;
+    }
+
+    ._personal_port_process_btm_group {
+        margin-bottom: 40px;
+    }
+
+    ._personal_port_process_top_para {
+        font-size: 16px;
+    }
+
+    ._personal_port_process_top_cont {
+        margin: 0 0 38px;
+    }
+
+    ._personal_port_process_top_cont {
+        margin: 0 0 38px;
+    }
+
+    ._personal_port_project_top_title {
+        font-size: 36px;
+    }
+
+    ._personal_port_project_top_para {
+        font-size: 16px;
+        max-width: 100%;
+    }
+
+    ._personal_port_project_top_cont {
+        margin: 0 0 50px;
+    }
+
+    ._personal_port_about_right_cont {
+        padding: 40px 0 0;
+    }
+
+    ._personal_port_about_title {
+        font-size: 30px;
+        margin: 0 0 12px;
+    }
+
+    ._personal_port_about_wrapper {
+        margin: 0 0 80px;
+    }
+
+    ._personal_port_testimonial_top_title {
+        font-size: 36px;
+        margin: 0 0 12px;
+    }
+
+    ._personal_port_testimonial_top_para {
+        max-width: 69%;
+        font-size: 16px;
+    }
+
+    ._personal_port_testimonial_arrows {
+        top: -84px;
+        right: 0;
+    }
+
+    ._personal_port_testimonial_wrapper {
+        margin: 0 0 70px;
+    }
+
+    ._personal_port_footer_top_title {
+        max-width: 80%;
+        font-size: 36px;
+    }
+
+    ._personal_port_footer_wrapper {
+        padding: 60px 0 0;
+    }
+
+    ._personal_port_footer_top_cont {
+        margin: 0 0 55px;
+    }
+
+    ._personal_port_footer_menu {
+        padding: 30px 0;
+    }
+
+    ._personal_port_footer_menu_wrapper_item_link {
+        font-size: 14px;
+    }
+
+    ._personal_port_footer_menu_wrapper_list {
+        gap: 20px;
+    }
+
+    ._personal_port_footer_logo_img {
+        max-width: 80%;
+    }
+
+    ._personal_port_footer_btm_cont {
+        padding: 24px 0;
+    }
+
+    ._personal_port_footer_btm_para {
+        font-size: 14px;
+    }
+}
+
+
+@media(max-width:767px) {
+    ._personal_port_hero_wrapper {
+        padding: 38px 0 38px;
+    }
+
+    ._personal_port_header_nav_right {
+        margin: 0 auto;
+    }
+
+    ._personal_port_header_nav_wrapper_item_link::before {
+        left: 4px;
+    }
+
+    ._personal_port_hero_title::before {
+        bottom: 5px;
+        left: 250px;
+    }
+
+    ._personal_port_hero_right_btn {
+        left: 310px;
+        bottom: 106px;
+    }
+
+    ._personal_port_services_list_title {
+        font-size: 22px;
+    }
+
+    ._personal_port_services_wrapper {
+        margin: 100px 0 60px;
+    }
+
+    ._personal_port_process_btm_group {
+        margin-bottom: 22px;
+    }
+
+    ._personal_port_process_btm_para {
+        padding: 0 0 24px;
+    }
+
+    ._personal_port_process_top_title {
+        font-size: 26px;
+    }
+
+    ._personal_port_about_title {
+        font-size: 26px;
+        margin: 0 0 12px;
+    }
+
+    ._personal_port_about_btm_title {
+        font-size: 20px;
+        margin: 0 0 12px;
+    }
+
+    ._personal_port_about_para1,
+    ._personal_port_about_para2 {
+        font-size: 14px;
+        margin: 0 0 18px;
+    }
+
+    ._personal_port_testimonial_wrapper {
+        margin: 0 0 50px;
+    }
+
+    ._personal_port_testimonial_top_title {
+        font-size: 27px;
+    }
+
+    ._personal_port_testimonial_top_para {
+        font-size: 14px;
+    }
+
+    ._personal_port_testimonial_top_cont {
+        margin: 0 0 40px;
+    }
+
+    ._personal_port_testimonial_cont {
+        padding: 16px 20px;
+    }
+
+    ._personal_port_testimonial_title {
+        font-size: 16px;
+    }
+
+    ._personal_port_testimonial_para {
+        font-size: 13px;
+        margin: 0 0 15px;
+    }
+
+    ._personal_port_footer_top_title {
+        font-size: 30px;
+    }
+
+    ._personal_port_footer_top_para {
+        gap: 16px;
+    }
+
+    ._personal_port_footer_menu_wrapper_list {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+    }
+
+    ._personal_port_footer_menu_right {
+        padding: 22px 0 0;
+    }
+}
+
+@media(max-width:575px) {
+    ._personal_port_hero_wrapper {
+        padding: 35px 0 38px;
+    }
+
+    ._personal_port_hero_title {
+        font-size: 43px;
+    }
+
+    ._personal_port_hero_title::before {
+        bottom: 5px;
+        left: 215px;
+    }
+
+    ._personal_port_hero_title {
+        margin-bottom: 12px;
+    }
+
+    ._personal_port_hero_right_cont_para {
+        font-size: 16px;
+    }
+
+    ._personal_port_hero_left_details {
+        margin: 28px 0 0;
+    }
+
+    ._personal_port_hero_left_title {
+        font-size: 26px;
+        margin: 0 0 16px;
+    }
+
+    ._personal_port_hero_left_list_item_link {
+        font-size: 14px;
+    }
+
+    ._personal_port_scroll_bar {
+        margin-top: 50px;
+    }
+
+    ._personal_port_hero_left_smtitle {
+        font-size: 14px;
+        margin: 0 0 10px;
+    }
+
+    ._personal_port_hero_left_cont_area::before {
+        left: -10px
+    }
+
+    ._personal_port_services_left_cont::after {
+        top: -20px;
+        right: -12px;
+    }
+
+    ._personal_port_services_left_cont::before {
+        bottom: -28px;
+    }
+
+    ._personal_port_services_right_title {
+        font-size: 26px;
+    }
+
+    ._personal_port_services_list_para {
+        font-size: 14px;
+    }
+
+    ._personal_port_services_list_title {
+        margin: 0 0 16px;
+    }
+
+    ._personal_port_process_top_title {
+        margin: 0 0 12px;
+    }
+
+    ._personal_port_process_top_para {
+        font-size: 14px;
+    }
+
+    ._personal_port_process_btm_title {
+        margin: 0 0 12px;
+    }
+
+    ._personal_port_process_wrapper {
+        margin: 0 0 50px;
+    }
+
+    ._personal_port_process_btm_title {
+        font-size: 18px;
+    }
+
+    ._personal_port_process_btm_title_span {
+        margin-right: 15px;
+    }
+
+    ._personal_port_project_top_title {
+        font-size: 30px;
+        margin: 0 0 12px;
+    }
+
+    ._personal_port_project_top_para {
+        font-size: 14px;
+        max-width: 75%;
+    }
+
+    ._personal_port_project_top_cont {
+        margin: 0 0 30px;
+    }
+
+    ._personal_port_project_card_smtitle {
+        font-size: 14px;
+        margin: 0 0 10px;
+    }
+
+    ._personal_port_project_card_title {
+        font-size: 26px;
+        margin: 0 0 16px;
+    }
+
+    ._personal_port_project_wrapper {
+        margin: 0 0 65px;
+    }
+
+    ._personal_port_about_title {
+        font-size: 22px;
+    }
+
+    ._personal_port_about_right_cont {
+        padding: 35px 0 0;
+    }
+
+    ._personal_port_about_btm_cont {
+        margin: 28px 0 0;
+    }
+
+    ._personal_port_about_social_link_list {
+        gap: 10px;
+    }
+
+    ._personal_port_about_wrapper {
+        margin: 0 0 60px;
+    }
+
+    ._personal_port_footer_menu {
+        padding: 30px 0 22px;
+    }
+
+    ._personal_port_footer_top_title {
+        font-size: 26px;
+    }
+
+    ._personal_port_footer_top_para {
+        font-size: 15px;
+    }
+
+    ._personal_port_footer_btn_link {
+        width: 140px;
+        height: 48px;
+        font-size: 16px;
+    }
+}
+
+@media(max-width:420px) {
+    ._personal_port_hero_title {
+        font-size: 36px;
+    }
+
+    ._personal_port_hero_right_cont_para {
+        font-size: 14px;
+    }
+
+    ._personal_port_hero_title::before {
+        bottom: -2px;
+        left: 179px;
+    }
+
+    ._personal_port_hero_right_btn {
+        position: static;
+        padding-top: 30px;
+    }
+
+    ._personal_port_hero_right_btn_link {
+        width: 140px;
+        height: 50px;
+        font-size: 16px;
+    }
+
+    ._personal_port_hero_right_bg_img {
+        margin: 0 0;
+    }
+
+    ._personal_port_scroll_title {
+        font-size: 14px;
+    }
+
+    ._personal_port_services_list_title_span {
+        margin-right: 15px;
+    }
+
+    ._personal_port_services_order_left {
+        order: 2;
+    }
+
+    ._personal_port_services_order_right {
+        order: 1;
+    }
+
+    ._personal_port_services_right_cont {
+        padding: 0 0 50px;
+    }
+
+    ._personal_port_services_wrapper {
+        margin: 50px 0 60px;
+    }
+
+    ._personal_port_project_card_title {
+        font-size: 16px;
+    }
+
+    ._personal_port_project_card_list_item_link {
+        font-size: 14px;
+    }
+
+    ._personal_port_project_card {
+        padding: 26px;
+    }
+
+    ._personal_port_project_btn {
+        margin: 12px 0 0;
+    }
+
+    ._personal_port_project_btn_link {
+        width: 145px;
+        height: 52px;
+        font-size: 16px;
+    }
+
+    ._personal_port_process_wrapper {
+        margin: 0 0 40px;
+    }
+
+    ._personal_port_testimonial_arrows {
+        top: -78px;
+        right: 277px;
+    }
+
+    ._personal_port_testimonial_top_cont {
+        margin: 0 0 114px;
+    }
+
+    ._personal_port_testimonial_title {
+        max-width: 81%;
+    }
+
+    ._personal_port_testimonial_para {
+        font-size: 16px;
+        margin: 0 0 15px;
+        max-width: 80%;
+    }
+
+    ._personal_port_testimonial_wrapper {
+        margin: 0 0 40px;
+    }
+}
+
+@media(max-width:375px) {
+    ._personal_port_hero_right_cont_para {
+        max-width: 98%;
+        font-size: 14px;
+    }
+
+    ._personal_port_process_top_para {
+        max-width: 97%;
+    }
+
+    ._personal_port_process_btm_para {
+        font-size: 14px;
+        max-width: 96%;
+    }
+
+    ._personal_port_testimonial_arrows {
+        top: -78px;
+        right: 230px;
+    }
+
+    ._personal_port_testimonial_para {
+        max-width: 92%;
+    }
+
+    ._personal_port_footer_top_title {
+        max-width: 89%;
+        margin: 0 auto 12px;
+    }
+
+    ._personal_port_footer_wrapper {
+        padding: 55px 0 0;
+    }
+
+    ._personal_port_footer_top_para {
+        font-size: 14px;
+        max-width: 93%;
+        text-align: center;
+    }
+}
+
+/* variable */
+:root {
+    --color1: #FFFFFF;
+    --color2: #000000;
+    --color3: #141F21;
+    --color4: #8CD7E7;
+    --color5: #A78BFF;
+    --color6: #D3FE57;
+    --color7: #FBDE4D;
+    --color8: #636E71;
+    --bg1: #58F9BF;
+}
